@@ -37,6 +37,12 @@ body {
   border-radius: 10px;
 }
 
+.drop {
+  font-size: 30px;
+  color: #3498DB;
+  margin-top: 20px;
+}
+
 h2 {
   margin: 10px 0;
 }
@@ -75,6 +81,31 @@ h2 {
   color: #3498DB;
   border: 1px solid #CDE7FD;
 }
+
+.nav {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 14px;
+}
+
+.nav .on {
+  color: #3498DB;
+  font-weight: bold;
+}
+
+
 
 
 

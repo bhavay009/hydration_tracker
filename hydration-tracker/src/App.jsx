@@ -31,6 +31,8 @@ function App() {
         </div>
       </div>
 
+      <div className="drop">💧</div>
+
       <h2>{intake} ml</h2>
       <p>of {goal} ml</p>
 
@@ -45,11 +47,19 @@ function App() {
         <button onClick={decreaseGoal}>-</button>
         <button onClick={increaseGoal}>+</button>
       </div>
+
+      <div className="nav">
+        <button className="on">Home</button>
+        <button>Track</button>
+        <button>Reminders</button>
+        <button>Stats</button>
+      </div>
     </div>
   );
 }
 
 export default App;
+
 
 
 
