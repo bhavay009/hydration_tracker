@@ -1,14 +1,23 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #F5F9FC;
+  background: #F0F4F8;
 }
 
-.app {
+.main {
   text-align: center;
   padding: 20px;
   color: #333;
 }
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 5px 0 15px;
+}
+
 
 .box {
   background: white;
@@ -22,6 +31,7 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .bar {
@@ -37,14 +47,11 @@ body {
   border-radius: 10px;
 }
 
+
 .drop {
   font-size: 30px;
   color: #3498DB;
   margin-top: 20px;
-}
-
-h2 {
-  margin: 10px 0;
 }
 
 .btns {
@@ -60,6 +67,7 @@ h2 {
   border: none;
   background: #3498DB;
   color: white;
+  cursor: pointer;
 }
 
 .goal {
@@ -76,21 +84,59 @@ h2 {
   margin: 5px;
   font-size: 16px;
   border-radius: 50%;
-  border: none;
+  border: 1px solid #CDE7FD;
   background: white;
   color: #3498DB;
-  border: 1px solid #CDE7FD;
+  cursor: pointer;
 }
 
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.buttons button {
+  background: white;
+  border: 1px solid #ADD6F9;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttons span {
+  color: #3498DB;
+  font-weight: bold;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
 .nav {
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
-  background: #FFFFFF;
+  background: white;
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #ddd;
 }
 
 .nav button {
@@ -98,35 +144,10 @@ h2 {
   border: none;
   color: #888;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.nav .on {
+.nav .active {
   color: #3498DB;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
